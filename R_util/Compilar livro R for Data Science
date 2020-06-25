@@ -1,0 +1,22 @@
+1 - Download the repository from https://github.com/hadley/r4ds
+2 - From R, run
+
+devtools::install_github("hadley/r4ds")
+devtools::install_github("wch/webshot")
+
+3 - From the command line (terminal), run
+
+sudo apt install phantomjs
+
+4 - From TeX Live (or whatever TeX manager you use) make sure framed and titling are installed
+
+	env PATH="$PATH" tlmgr --gui
+
+5 - Compile the book using (R prompt)
+
+	# PDF
+	bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
+	# Static website
+	bookdown::render_book("index.Rmd", output_format = "bookdown::gitbook")
+
+

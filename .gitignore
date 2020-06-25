@@ -1,0 +1,7 @@
+/*.Rhistory
+/*.R~
+.emacs~
+.RData
+.Renviron
+*R*
+#*.R#
